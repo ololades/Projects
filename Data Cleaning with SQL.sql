@@ -113,7 +113,6 @@ FROM Retail.[dbo].[List of Orders]
 GROUP BY (State) 
 ORDER BY 1
 
-BEGIN TRANSACTION
 
 SELECT State,
 CASE WHEN State IS NULL THEN 'Unknown'
